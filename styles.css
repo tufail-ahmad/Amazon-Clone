@@ -1,0 +1,210 @@
+/* ========== Root Variables ========== */
+:root {
+  /* Text Colors */
+  --text-primary: #000000;
+  --text-secondary: #232f3e;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2f2f2;
+
+  /* Header & Footer */
+  --bg-footer: #131a22;
+  --text-header: #ffffff;
+  --text-footer: #dddddd;
+
+  /* Accent Colors */
+  --accent-primary: #ff9900;
+  --accent-hover: #febd69;
+
+  /* Border Colors */
+  --border-color: #e6e6e6;
+}
+
+/* ========== Base Styles ========== */
+html {
+  font-size: 62.5%; /* 1rem = 10px (easy calculation) */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  font-size: 1.6rem; /* default 16px text */
+}
+
+/* ========== Header ========== */
+#nav-belt {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 70px;
+}
+
+#nav-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container span {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.logo {
+  width: 110px;
+  padding-top: 10px;
+}
+
+#location-slot {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  font-size: 1.4rem;
+}
+
+#nav-search {
+  height: 60px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#categories {
+  height: 80%;
+  width: 10%;
+  border: 1px solid var(--border-color);
+  border-right: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  background-color: #e6e6e6;
+  color: #434646;
+}
+
+.search-bar {
+  height: 80%;
+  display: flex;
+  width: 90%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.search-bar button {
+  background-color: #febd69;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.4rem;
+}
+
+.search-bar button:hover {
+  background-color: var(--accent-hover);
+}
+
+#nav-right {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-header);
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent-primary);
+}
+
+/* ========== Main Content ========== */
+.main-content {
+  background-color: var(--bg-secondary);
+  min-height: 70vh;
+  padding: 5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--text-secondary);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: var(--accent-primary);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.6rem;
+}
+
+.hero button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--bg-footer);
+  color: var(--text-footer);
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+footer p:first-child {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+footer .footer-links {
+  margin: 1rem 0;
+}
+
+footer .footer-links a {
+  color: var(--text-footer);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  color: var(--accent-primary);
+}
