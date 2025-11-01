@@ -132,17 +132,32 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.nav-links a {
-  color: var(--text-header);
   margin-left: 2rem;
-  text-decoration: none;
-  font-size: 1.4rem;
 }
 
-.nav-links a:hover {
-  color: var(--accent-primary);
+#country-flag {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+#country-flag img {
+  width: 25px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+#country-flag span {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#account-links span {
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 /* ========== Main Content ========== */
